@@ -1,0 +1,114 @@
+﻿               
+ /* This needs to be first because FF3 is now supporting this  */
+.clearfix {display: inline-block;}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    font-size: 0;
+    visibility: hidden;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+html{color:#666;background:#fff;overflow:auto;overflow-y:scroll;height:100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%; z-index:-1;}
+input.text{line-height:18px;height:13px;}
+legend{color:#000;}
+br{letter-spacing:0px;}
+a{text-decoration:none;}
+
+p{margin:0 0 20px 0;line-height:22px;}
+.center{margin:0px auto;}
+.central{text-align:center !important;}
+.left{float:left;}
+.right{float:right;}
+.textleft{ text-align:left; }
+.textright{ text-align:right; }
+.middle{vertical-align:middle;}
+.clear{float:none; clear:both;font-size:0px;line-height:0px;height:0px; min-height:0px; padding:0px; margin:0px; overflow:hidden;}
+.hide{display:none;}
+.master{width:1182px;}
+.hr{height:1px;line-height:0px;font-size:0px;border-top:solid 1px #f1f1f1;margin-top:10px;}
+.inline{ display:inline; }
+.hand{cursor:pointer;}
+a{ outline:none; color:#069; }
+a img{border:none;}
+a:hover{ text-decoration:underline; }
+
+body{ font-size:12px; font-family:微软雅黑,Arial, Helvetica, sans-serif; background-color:#fff; line-height:22px; }
+
+/* site wide */
+#wrapper {background:#FFFFFF none repeat scroll 0 0;width:100%;}
+#container{width:1182px; margin:0 auto;}
+.bound{ width:980px; overflow:hidden; margin:0 auto;}
+.clear_head{width:986px;}
+a.expand { display:block; float:right; font-size:12px; height:18px; line-height:18px; vertical-align:middle; *width:90px; width:auto !important; }
+img.iconTick{ margin-left:5px; vertical-align: middle; }
+span.HighlightSearch {font-weight:bold;}
+
+
+
+
+.autoMaxWidth{ overflow:hidden; position:relative;height:232px; }
+
+.videoList-container{background:none ; position:relative; top:-1px; margin-bottom:24px;}
+.videoList-container .frame{ float:left; width:745px; position:relative;}
+#dcar{ width:745px; overflow:hidden;position: relative; height:212px;}
+#dcar .content_reel{ position:relative; left:0; top:0;}
+.videoList-container .rightcontent{ min-height:172px; margin-left:376px; position:relative; padding:20px;}
+.videoList-container .rightcontent h2{ font-size:18px; margin-bottom:13px; color:#333;font-weight:700;}
+.videoList-container .rightcontent p{ color:#333;margin-bottom:10px;}
+.videoList-container .leftcontent{ width:376px; height:212px; overflow:hidden; position: absolute;left: 0;top: 0;}
+.videoList-container .video-link{ text-align:right; margin: 10px 0 0;}
+.videoList-container .vid{background-position: right 0;outline: medium none;}
+.videoList-container .vid,.videoList-container .vid b{cursor: pointer; display: inline-block; height: 26px;line-height: 26px; text-decoration:none;}
+.videoList-container .vid b{background-position: 0 0;margin: 0 10px 0 0;padding: 0 2px 0 17px;font-weight:400;}
+.videoList-container a:link, .videoList-container a:hover, .videoList-container a:visited, .videoList-container a:active {color: #fff;
+}
+.videoList-container a.vid:hover{ background-position:100% -26px;height:32px;}
+.videoList-container a.vid:hover b{ background-position:0 -26px;height:32px; }
+.videoList-container #thumbs {background-position: 0 -92px;background-repeat: repeat-x;height: 53px;/* position: absolute;*/width:100%;display:none; position:relative;clear:both}
+.videoList-container #thumbs .mygallery{ display:inline-block; position:absolute; right:0;}
+.videoList-container #thumbs .mygallery .overclear{white-space:nowrap;}
+.videoList-container #thumbs a{border:2px solid #AAA; width:84px; height:26px; display:inline-block; margin-top:12px;  margin-right:1px; +margin-right:5px; overflow:hidden; background-color:#000;}
+.videoList-container #thumbs a img{margin-top:-30px;}
+.videoList-container #thumbs a:hover{border:2px solid #fff;}
+.videoList-container #thumbs a.highlight{border:2px solid #fff;}
+.videoList-container #thumbs a.prev, .videoList-container #thumbs a.next{ display:inline-block; width:26px; height:26px; margin-top:12px; margin-right:5px; background: url(http://www1.hikvision.com/ucmf/groups/public/documents/webasset/hw_063157.png) no-repeat 0px 0px transparent; border:none; display:none;}
+.videoList-container #thumbs a.prev{ background-position:-71px -63px; position: absolute; left:10px; top:4px;}
+.videoList-container #thumbs a.next{ background-position:-106px -63px; position: absolute; right:0px; top:4px;}
+#thumbs_tool_tip{ position:absolute; display:none;}
+.videoList-container #thumbs a.prev:hover, .videoList-container #thumbs a.next:hover{ border:none;}
+#thumbs_tool_tip .thumbs_tool_tip{background-color:#666; opacity:0.8; filter: alpha(opacity=50);overflow:visible; white-space:nowrap;}
+#thumbs_tool_tip .inner{ position:relative; color:#fff; padding:10px; margin:0;}
+.serviceVideo{ height:auto!important; height:180px; min-height: 180px;}
+.serviceVideo .leftcontent{width:320px; height:180px; overflow:hidden;}
+.serviceVideo .rightcontent{height:auto!important; height:160px; min-height: 160px; margin-left:320px; padding:10px;}
+.serviceVideo #thumbs a{ margin-right:5px;}
+ 
+ 
+ /* index */
+#slide-index{min-width:1198px;-width:1198px; height:396px; overflow:hidden; position:relative;}
+#slide-index .slides{min-width:1198px;-width:1198px; height:396px; }
+#slide-index .slide{min-width:1198px;-width:1198px; height:396px; float:left; position:relative; }
+#slide-index .image{ z-index:1;position:absolute; }
+#slide-index .text, #slide-index .button { z-index:2;position:absolute; top:-500px; }
+#slide-index .button{ display:none; width:138px;}
+
+#slide-index .control{ position:absolute; bottom:0px; width:100%; text-align:center; height:19px; cursor:pointer; z-index:40;}
+#slide-index .control a{ width:13px; height:13px; cursor:pointer; display:inline-block; background-repeat:no-repeat; background-image:url(../images/indexa2.png); margin-right:10px; opacity:0.6; filter:alpha(opacity=60);}
+#slide-index .control a:hover, #slide-index .control a.active{ background-image:url(../images/indexoa.png); opacity:1; filter:alpha(opacity=100);}
