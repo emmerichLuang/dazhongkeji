@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <meta name="designer" content="“网站开发设计制作：杭州蒙特信息技术有限公司" www.mountor.com 咨询电话0571-88368188”> 
+  <meta name="description" content=""> 
+  <meta name="keywords" content=""> 
+  <meta name="viewport" content="width=1280, initial-scale=0.2"> 
+  <meta http-equiv="Cache-Control" content="max-age=1800"> 
+  <title></title> 
+  <link rel="bookmark" href="../favicon.ico" mce_href="../favicon.ico" type="image/x-icon"> 
+  <link rel="icon" href="../favicon.ico" mce_href="../favicon.ico" type="image/x-icon"> 
+  <link rel="shortcut icon" href="../favicon.ico" mce_href="../favicon.ico" type="image/x-icon"> 
+  <link rel="stylesheet" type="text/css" href="css/index.css"> 
+  <link rel="stylesheet" type="text/css" href="css/main.css"> 
+  <script type="text/javascript" src="js/jquery.js"></script> 
+  <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script> 
+  <script type="text/javascript" src="js/imgchange.js"></script> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <script src="js/jQuery.md5.js" type="text/javascript"></script> 
+   <script type="text/javascript">
+    function getCookie(name) {
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+
+        if (arr = document.cookie.match(reg))
+
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+    $(function() {
+    var logstr = getCookie("UserName");
+        if (logstr != null && logstr != "") {
+            $("#UserNameLable").html(logstr);
+            $("#denglu").html("Vous êtes connecté(e)");
+        }
+        $(".nav .right ul li").hover(function() {
+            $(this).children("ul").show();
+        }, function() {
+            $(this).children("ul").hide();
+        });
+        $(".login_1").hover(function() {
+        
+            if (logstr != null && logstr != "") {
+                $("#LoginAfter").toggle();
+                $("#denglu").html("Vous êtes connecté(e)");
+            } else {
+            $(".login_main").toggle(); 
+            }
+        });
+        $("#language").hover(function() {
+            $(this).children("ul").toggle();
+        });
+    });
+
+
+
+</script> 
+   <div class="head"> 
+    <div class="header"> 
+     <div class="login_1"> 
+      <p id="denglu">Identifiez-vous</p> 
+      <form id="form2" action="" method="post"> 
+       <div class="login_main"> 
+        <ul> 
+         <li>Nom d'utilisateur</li> 
+         <li id="ErrorText2" style="display:none;font-size:12px; color:#d71921;">Nom d'utilisateur ou mot de passe incorrect .</li> 
+         <li><input name="UserName" id="UserName2" type="text" class="text"></li> 
+         <li>Mot de passe</li> 
+         <li><input name="Password" id="Password2" type="password" class="text"></li> 
+         <li><a href="javascript:SubmitForm2()" title="" class="btn">Mot de passe</a></li> 
+         <li> <p class="p1"><input name="KeepLogin" id="KeepLogin" type="checkbox" value="7"></p> <p class="p2">Rester connecté</p> <p class="p3"><a href="ForgetPassword.aspx?stat=1&amp;c_kind=34&amp;c_kind2=41" title="">Mot de passe oublié ?</a></p> </li> 
+         <li>Nouvel utilisateur?</li> 
+         <li><a href="Regist.aspx?stat=1&amp;c_kind=34&amp;c_kind2=41" class="btn_1" title="">S'inscrire</a></li> 
+        </ul> 
+       </div> 
+      </form> 
+      <div class="login_after" id="LoginAfter"> 
+       <div class="top">
+        <h3 style="font-weight:bolder">Hello,<label id="UserNameLable"></label>!</h3>Bienvenu au service en ligne de Hikvision.
+       </div> 
+       <div class="center"> 
+        <ul> 
+         <li><a href="OnlineInquiry.aspx?stat=1&amp;c_kind=59&amp;c_kind2=61" title="">Demande en ligne</a></li> 
+         <li><a href="OnlineCoursenew.aspx?stat=1&amp;c_kind=34&amp;c_kind2=41&amp;c_kind3=351" title="">Formation en ligne</a></li> 
+        </ul> 
+       </div> 
+       <div class="center"> 
+        <ul> 
+         <li><a href="Tools_82.html" title="">Téléchargements</a></li> 
+         <li><a href="about_400.html" title="">HEOP</a></li> 
+        </ul> 
+       </div> 
+       <div class="bottom"> 
+        <ul> 
+         <li><a href="UpdatProfile.aspx?stat=1&amp;c_kind=34&amp;c_kind2=41" title="">Mettre à jour le profil</a></li> 
+         <li><a href="ChangePassword.aspx?stat=1&amp;c_kind=34&amp;c_kind2=41" title="">Modifier le mot de passe</a></li> 
+         <li><a href="LoginOut.aspx?stat=1&amp;c_kind=34&amp;c_kind2=41" title="">Déconnexion</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <ul class="ul"> 
+      <li><p><a target="_blank" href="http://www.hikvision.com/en/">Siège</a></p><span>|</span></li> 
+      <li><a target="_blank" href="index.html" title="Frances" class="a4"></a></li> 
+      <li class="li" id="language"> <p>- Langue -</p> 
+       <ul> 
+        <li><a href="http://www.hikvision.com/cn/" target="_blank">中文</a></li> 
+        <li><a href="http://www.hikvision.com/en/" target="_blank">International</a></li> 
+        <li><a href="http://www.hikvision.com/ar/" target="_blank">Arabic</a></li> 
+        <li><a href="http://www.hikvision.com/es/" target="_blank">Castellano</a></li> 
+        <li><a href="http://www.hikvision.com/europe/" target="_blank">Europe</a></li> 
+        <li><a href="http://www.hikvision.com/fr/" target="_blank">France</a></li> 
+        <li><a href="http://www.hikvisionindia.co.in" target="_blank">India</a></li> 
+        <li><a href="http://www.hikvision.com/korean/" target="_blank">Korea</a></li> 
+        <li><a href="http://www.hikvision.com/us/" target="_blank">North America</a></li> 
+        <li><a href="http://www.hikvision.ru/" target="_blank">Русский</a></li> 
+        <li><a href="http://www.hikvision.com/tr/" target="_blank">Türkçe</a></li> 
+       </ul> </li> 
+     </ul> 
+    </div> 
+    <div class="nav"> 
+     <h1 class="logo"><a href="index.html" title=""><img src="images/logo.png" alt=""></a></h1> 
+     <div class="right"> 
+      <ul> 
+       <li><a href="index.html" title=""><img src="images/nav_1.png" alt="" onmouseover="this.src='images/nav_1_1.png'" onmouseout="this.src='images/nav_1.png'"></a></li> 
+       <li><a href="product_1.html" title=""><img src="images/nav_2.png" alt="" onmouseover="this.src='images/nav_2_1.png'" onmouseout="this.src='images/nav_2.png'"></a> 
+        <ul class="ul1"> 
+         <li class="li1"><a href="products_157.html" title="">Caméras réseau</a></li> 
+         <li class="li2"><a href="products_120.html" title="">Caméras analogiques</a></li> 
+         <li class="li1"><a href="products_489.html" title="">Caméras PTZ</a></li> 
+         <li class="li2"><a href="products_210.html" title="">NVR</a></li> 
+         <li class="li1"><a href="products_215.html" title="">DVR</a></li> 
+         <li class="li2"><a href="products_223.html" title="">DVR Hybride</a></li> 
+         <li class="li1"><a href="products_226.html" title="">Encodeur &amp; Décodeur</a></li> 
+         <li class="li2"><a href="products_233.html" title="">Carte Vidéo encodage/décodage</a></li> 
+         <li class="li1"><a href="products_107.html" title="">Stockage réseau</a></li> 
+         <li class="li2"><a href="products_646.html" title="">Mobile &amp; Traffic</a></li> 
+         <li class="li1"><a href="products_7.html" title="">Logiciels de gestion vidéo</a></li> 
+         <li class="li2"><a href="products_238.html" title="">Accessoires </a></li> 
+         <li class="li1"><a href="products_243.html" title="">Produits dédiés</a></li> 
+         <li class="li li2"><a href="products_408.html" title="">Produits obsolètes</a></li> 
+        </ul> </li> 
+       <li><a href="Press-Release_74.html" title=""><img src="images/nav_3.png" alt="" onmouseover="this.src='images/nav_3_1.png'" onmouseout="this.src='images/nav_3.png'"></a> 
+        <ul> 
+         <li><a href="Press-Release_74.html" title="">Communiqués de presse</a></li> 
+         <li><a href="Events_72.html" title="">Événements</a></li> 
+         <li class="li"><a href="SuccessStory_73.html" title="">Etude de cas clients</a></li> 
+        </ul> </li> 
+       <li><a href="faq_80.html" title=""><img src="images/nav_4.png" alt="" onmouseover="this.src='images/nav_4_1.png'" onmouseout="this.src='images/nav_4.png'"></a> 
+        <ul> 
+         <li><a href="faq_80.html" title="">Délai</a></li> 
+         <li><a href="Tools_82.html" title="">Télécharger</a></li> 
+         <li><a href="list_90.html" title="">Base de connaissances</a></li> 
+         <li><a href="faq_92.html" title="">F.A.Q</a></li> 
+         <li><a href="WhitePaper_39.html" title="">Livre Blanc</a></li> 
+         <li><a href="Video_40.html" title="">Vidéos</a></li> 
+         <li><a href="OnlineCoursenew.aspx?stat=1&amp;c_kind=34&amp;c_kind2=41&amp;c_kind3=351" title="">Formation en ligne</a></li> 
+         <li class="li"><a href="about_435.html" title="">Centre de la sécurité</a></li> 
+        </ul> </li> 
+       <li><a href="Partner_43.html" title=""><img src="images/nav_5.png" alt="" onmouseover="this.src='images/nav_5_1.png'" onmouseout="this.src='images/nav_5.png'"></a> 
+        <ul> 
+         <li><a href="partnerlist.aspx?stat=1&amp;c_kind=43&amp;c_kind2=44&amp;c_kind3=46" title="">Partenaires technologiques</a></li> 
+         <li><a href="distributionPartner.aspx?stat=1&amp;c_kind=43&amp;c_kind2=45&amp;c_kind3=51" title="">Partenaires de distribution</a></li> 
+         <li class="li"><a href="about_400.html" title="">Embedded Open Platform</a></li> 
+        </ul> </li> 
+       <li><a href="about_60.html" title=""><img src="images/nav_6.png" alt="" onmouseover="this.src='images/nav_6_1.png'" onmouseout="this.src='images/nav_6.png'"></a> 
+        <ul class="ul"> 
+         <li><a href="about_60.html" title="">A propos d'HIKVISION</a></li> 
+         <li><a href="OnlineInquiry.aspx?stat=1&amp;c_kind=59&amp;c_kind2=61" title="">Demande en ligne</a></li> 
+         <li><a href="contactHikvision_62.html" title="">Nous contacter</a></li> 
+         <li class="li"><a href="hr.aspx?stat=1&amp;c_kind=59&amp;c_kind2=10512" title="">Carrière</a></li> 
+        </ul> </li> 
+      </ul> 
+     </div> 
+     <form id="ser" method="post" action="javascript:qwsearch();"> 
+      <div class="search2">
+       <div class="text">
+        <input name="qwsearch" id="qwsearch" type="text" value="Rechercher" onblur="if (this.value==''){ this.value='Rechercher';}" onfocus="if (this.value=='Rechercher') {this.value='';}" class="text1">
+       </div>
+       <input onclick="qwsearch();" name="" type="submit" value="" class="btn">
+      </div> 
+     </form> 
+    </div> 
+   </div> 
+   <script language="javascript" type="text/javascript">
+    $(function () {
+        $("#language").change(function () {
+//            window.open($("#language").val());
+            if ($("#language").val() != "") {
+                window.location = $("#language").val()
+            }
+        });
+
+    });
+    function qwsearch() {
+        var keycp = document.getElementById("qwsearch");
+        if (keycp.value != null && keycp.value != "" && keycp.value != "Rechercher") {
+            window.location.href = "searchz.aspx?stat=1&id=1&key=" + keycp.value;
+        }
+        else {
+            alert("Merci de taper un mot clé pour votre recherche");
+        }
+    }
+
+</script> 
+   <script type="text/javascript">
+    function check2() {
+        if ($("#UserName2").val() == null || $("#UserName2").val() == "" || $("#Password2").val() == null || $("#Password2").val() == "") {
+            $("#ErrorText2").show();
+            $("#UserName2").focus();
+            $("#UserName2").select();
+            return false;
+        } else {
+            $("#ErrorText2").hide();
+            //alert($.md5($("#Password2").val()));
+            document.getElementById("Password2").value=$.md5($("#Password2").val());
+            //$("#Password2").val() = $.md5($("#Password2").val());
+        }
+        return true;
+    }
+    function SubmitForm2() {
+        if (check2()) {
+            $.ajax({
+                url: "ashx/Login.ashx",
+                type: 'post',
+                data: $('#form2').serialize(),
+                dataType: 'text',
+                async: false,
+                success: function (msg) {
+                    if (msg == "true") {
+                        if ($("#KeepLogin").attr("checked") == true) {
+                            addCookie2("UserName", $("#UserName2").val(), 168);
+                        }
+                        $("#UserNameLable").html($("#UserName2").val());
+                        $("#form2").hide();
+                        $("#LoginAfter").show();
+                        $("#denglu").html("Vous êtes connecté(e)");
+                    }
+
+                    if (msg.indexOf("@") >= 0) {
+                        $("#ErrorText2").show();
+                        if (msg.indexOf("false") >= 0) {
+                            $("#ErrorText2").html("Message sending failed !");
+                        }
+                        else {
+                            $("#ErrorText2").html("Votre compte n’a pas été activé, un lien d’activation a été envoyé à " + msg + ", merci de cliquer dessus pour activer votre compte.");
+                        }
+
+                    }
+                     if (msg == "false") {
+                         $("#ErrorText2").show();
+                         $("#form2").show();
+                         $("#LoginAfter").hide();
+                     }
+
+                 }
+             });
+         }
+
+
+     }
+    function addCookie2(objName, objValue, objHours) {      //添加cookie
+
+        var str = objName + "=" + escape(objValue);
+
+        if (objHours > 0) {                               //为时不设定过期时间，浏览器关闭时cookie自动消失
+
+            var date = new Date();
+
+            var ms = objHours * 3600 * 1000;
+
+            date.setTime(date.getTime() + ms);
+
+            str += "; expires=" + date.toGMTString() + ";path=/";
+
+        }
+
+        document.cookie = str;
+
+    }
+
+ </script> 
+   <div class="banners"> 
+    <div id="mVisual" class="banner"> 
+     <div class="left">
+      <li id="bImg1" style="z-index:1"><a href="http://overseas.hikvision.com/fr/products_157.html" title=""><img src="../upload/youqing/20160425173808284_872.png" alt=""></a></li>
+      <li id="bImg2" style="z-index:1"><a href="http://overseas.hikvision.com/fr/Smart2.0/" title=""><img src="../upload/youqing/20160425173849530_871.png" alt=""></a></li>
+      <li id="bImg3" style="z-index:1"><a href="http://overseas.hikvision.com/europe/vmsOverview_535.html" title=""><img src="../upload/youqing/20160425173957702_870.png" alt=""></a></li>
+      <li id="bImg4" style="z-index:1"><a href="http://overseas.hikvision.com/fr/products_175.html" title=""><img src="../upload/youqing/20160510181045713_869.png" alt=""></a></li>
+     </div> 
+     <ul id="mSImg" class="right hd"> 
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li> 
+     </ul> 
+    </div> 
+   </div> 
+   <script type="text/javascript">
+                //jQuery("#mVisual").slide({ mainCell: ".left", autoPage: true, effect: "leftLoop",interTime:5500, autoPlay: true, vis: 1 });
+                jQuery("#mVisual").slide({ mainCell:".left",titCell:".hd li", effect:"leftLoop", autoPlay:true, delayTime:300, triggerTime:50,interTime:3500});	
+            </script> 
+   <div class="main"> 
+    <div class="left"> 
+     <div class="news"> 
+      <h3><a href="Press-Release_74.html" title="">Actualités</a></h3> 
+      <ul id="news"> 
+       <li><p><a href="Press-Release-details_74_i6856.html" title="Hikvision Moves Up to Second Place on the A&amp;S 2015 Security 50 Podium">Hikvision Moves Up to Second Place o...</a><span> 01.15</span></p></li>
+       <li><p><a href="Press-Release-details_79_i6920.html" title="Hikvision H.264+ Smart Codec Powers 4K Total Surveillance System">Hikvision H.264+ Smart Codec Powers ...</a><span> 10.22</span></p></li>
+       <li><p><a href="Press-Release-details_79_i6919.html" title="Hikvision Easy IP Solution to Offer More Advanced Features for SMB Requirement">Hikvision Easy IP Solution to Offer ...</a><span> 10.19</span></p></li> 
+      </ul> 
+      <div class="po"> 
+       <ul> 
+        <li><a class="a">&nbsp;</a></li> 
+        <li><a>&nbsp;</a></li> 
+        <li><a>&nbsp;</a></li> 
+       </ul> 
+      </div> 
+      <div class="view">
+       <a href="Press-Release_74.html" title="">Voir toutes les actualités</a>
+       <a href="rss.aspx" target="_blank" title=""><img src="images/view.png"></a>
+      </div> 
+     </div> 
+     <div class="events"> 
+      <h3><a href="Events_72.html" title="">Événements</a></h3> 
+      <div id="events"> 
+       <dl>
+        <dt>
+         <a title=""><img src="../uploads/9fe449ff-e980-4991-afdd-6610c57c4a27/1601080840434043.jpg" alt="" width="60" height="60"></a>
+        </dt>
+        <dd>
+         <a title="">Dag van de openbare ruimte 2016</a>
+        </dd>
+        <dd>
+         Feb. 3-4 
+        </dd>
+        <dd></dd>
+        <dd>
+         Booth number:Palace 3 booth 2.41
+        </dd>
+       </dl> 
+       <dl>
+        <dt>
+         <a title=""><img src="../uploads/3a01ad79-de7b-48a6-88be-8a3b2b3fc127/1601080857215721.jpg" alt="" width="60" height="60"></a>
+        </dt>
+        <dd>
+         <a title="">Sicur 2016</a>
+        </dd>
+        <dd>
+         Feb. 23-26
+        </dd>
+        <dd></dd>
+        <dd>
+         Booth number:Hall 10 booth 10D11
+        </dd>
+       </dl> 
+      </div> 
+      <div class="po"> 
+       <ul> 
+        <li><a class="a">&nbsp;</a></li> 
+        <li><a>&nbsp;</a></li> 
+        <li><a>&nbsp;</a></li> 
+       </ul> 
+      </div> 
+      <div class="view">
+       <a href="Events_72.html" title="">Voir tous les événements </a>
+      </div> 
+     </div> 
+    </div> 
+    <div class="products"> 
+     <h3><a href="product_1.html" title="">Produits Phares</a></h3> 
+     <a class="btn_left prev" href="javascript:void(0);" title=""></a> 
+     <a class="btn_right next" href="javascript:void(0);" title=""></a> 
+     <div id="products" class="bd"> 
+      <div class="ff"> 
+       <ul>
+        <li><a href="Products_accessries_159_i16514.html" title=""><img style="width:150px;height:108px;" src="/uploadfile/image/product/middle/20150514185937060.jpg" alt=""></a></li>
+        <li><a href="Products_accessries_159_i16514.html" title="">DS-2CD2T22WD-I3/I5/I8</a></li>
+        <li>2MP EXIR Network Bullet Camera</li>
+       </ul> 
+       <ul>
+        <li><a href="Products_accessries_159_i16515.html" title=""><img style="width:150px;height:108px;" src="/uploadfile/image/product/middle/20150514185849729.jpg" alt=""></a></li>
+        <li><a href="Products_accessries_159_i16515.html" title="">DS-2CD2T42WD-I3/I5/I8</a></li>
+        <li>4MP EXIR Network Bullet Camera</li>
+       </ul> 
+       <ul>
+        <li><a href="Products_accessries_209_i16517.html" title=""><img style="width:150px;height:108px;" src="/uploadfile/image/product/middle/20150514185757282.jpg" alt=""></a></li>
+        <li><a href="Products_accessries_209_i16517.html" title="">DS-2CD2522FWD-I(W)(S)</a></li>
+        <li>2MP WDR Mini Dome Network Camera</li>
+       </ul> 
+       <ul>
+        <li><a href="Products_accessries_209_i16516.html" title=""><img style="width:150px;height:108px;" src="/uploadfile/image/product/middle/20150514185713476.jpg" alt=""></a></li>
+        <li><a href="Products_accessries_209_i16516.html" title="">DS-2CD2542FWD-I(W)(S)</a></li>
+        <li>4MP WDR Mini Dome Network Camera</li>
+       </ul>
+      </div>
+      <div class="ff"> 
+       <ul>
+        <li><a href="Products_accessries_512_i18498.html" title=""><img style="width:150px;height:108px;" src="/uploadfile/image/product/middle/20160330171730407.jpg" alt=""></a></li>
+        <li><a href="Products_accessries_512_i18498.html" title="">DS-2CD2F52F-I (S)</a></li>
+        <li>5MP Infrared Network Dome Camera</li>
+       </ul> 
+       <ul>
+        <li><a href="Products_accessries_159_i16509.html" title=""><img style="width:150px;height:108px;" src="/uploadfile/image/product/middle/20150514184157452.jpg" alt=""></a></li>
+        <li><a href="Products_accessries_159_i16509.html" title="">DS-2CD2342WD-I</a></li>
+        <li>4MP WDR EXIR Turret Network Camera</li>
+       </ul> 
+       <ul>
+        <li><a href="Products_accessries_157_i16490.html" title=""><img style="width:150px;height:108px;" src="/uploadfile/image/product/middle/20150514185346339.jpg" alt=""></a></li>
+        <li><a href="Products_accessries_157_i16490.html" title="">DS-2CD2022WD-I</a></li>
+        <li>2MP IR Bullet Network Camera</li>
+       </ul> 
+       <ul>
+        <li><a href="Products_accessries_159_i18493.html" title=""><img style="width:150px;height:108px;" src="/uploadfile/image/product/middle/20160608152117705.jpg" alt=""></a></li>
+        <li><a href="Products_accessries_159_i18493.html" title="">DS-2CD2352-I</a></li>
+        <li>5MP WDR EXIR Turret Network Camera</li>
+       </ul>
+      </div>
+      <div class="ff"> 
+       <ul>
+        <li><a href="Products_accessries_160_i18494.html" title=""><img style="width:150px;height:108px;" src="/uploadfile/image/product/middle/20160608154456980.jpg" alt=""></a></li>
+        <li><a href="Products_accessries_160_i18494.html" title="">DS-2CD2652F-I(Z)(S)</a></li>
+        <li>5MP Bullet Network Camera</li>
+       </ul> 
+       <ul>
+        <li><a href="Products_accessries_160_i18495.html" title=""><img style="width:150px;height:108px;" src="/uploadfile/image/product/middle/20160608155646189.jpg" alt=""></a></li>
+        <li><a href="Products_accessries_160_i18495.html" title="">DS-2CD2752F-I(Z)(S)</a></li>
+        <li>5MP Vandal-proof Network Dome Camera</li>
+       </ul> 
+       <ul>
+        <li><a href="Products_accessries_179_i16778.html" title=""><img style="width:150px;height:108px;" src="/uploadfile/image/product/middle/20140820164848709643.jpg" alt=""></a></li>
+        <li><a href="Products_accessries_179_i16778.html" title="">DS-2CE56D5T-(A)VPIR3ZH</a></li>
+        <li>Turbo HD1080P Motorized Vari-focal IR Dome Camera</li>
+       </ul> 
+       <ul>
+        <li><a href="Products_accessries_179_i16779.html" title=""><img style="width:150px;height:108px;" src="/uploadfile/image/product/middle/20150817170808293.jpg" alt=""></a></li>
+        <li><a href="Products_accessries_179_i16779.html" title="">DS-2CE56D5T-IR3Z</a></li>
+        <li>Turbo HD1080P Motorized Vari-focal IR Turret Camera</li>
+       </ul> 
+      </div> 
+     </div> 
+     <div class="po"> 
+      <ul> 
+       <li><a class="a">&nbsp;</a></li> 
+       <li><a>&nbsp;</a></li> 
+       <li><a>&nbsp;</a></li> 
+      </ul> 
+     </div> 
+    </div> 
+    <script type="text/javascript">
+                jQuery(".products").slide({ mainCell: ".bd", autoPage: true, effect: "leftLoop",interTime:5500, autoPlay: true, vis: 1 });
+            </script> 
+    <div class="right"> 
+     <dl> 
+      <dt style="padding-top:10px;">
+       <a href="ProductsSelector.aspx?stat=1&amp;c_kind=350" title="" target="_blank">Sélecteur de produits</a>
+      </dt> 
+      <dd>
+       <p class="p"><span>Sélectionner et comparer les produits par caractéristiques et fonctionnalités.</span><span><img src="images/icon_2.png" alt=""></span></p>
+      </dd> 
+     </dl> 
+     <dl> 
+      <dt>
+       <a href="Press-Release-details_74_i6848.html" title=""><img src="images/img_5.png" alt=""></a>
+      </dt> 
+      <dd>
+       <p class="p"><span>HIKVISION - Fournisseur N°1 des équipements de vidéosurveillance dans le monde.</span><span><img src="images/icon_2.png" alt=""></span></p>
+      </dd> 
+      <!--<dd><a href="javascript: alert('Under Construction');" title="">Find Products</a></dd>--> 
+     </dl> 
+    </div> 
+   </div> 
+   <div class="links"> 
+    <div class="bottom"> 
+     <ul> 
+      <li><a target="_blank" href="Smart2.0" title="Smart2.0"><img style="height:90px;" src="../upload/20160418105542439.JPG" onmouseout="javascript:this.src='../upload/20160418105542439.JPG'" onmouseover="javascript:this.src='../upload/20160418105542439.JPG'" alt=""></a></li>
+      <li><a target="_blank" href="http://oversea-download.hikvision.com/uploadfile//VMS%20Partber%20Standardship/VMS%20Partners%20Integration%20Status-20150331.pdf" title="Les critères du partenariat VMS "><img style="height:90px;" src="../upload/20160418105851714.JPG" onmouseout="javascript:this.src='../upload/20160418105851714.JPG'" onmouseover="javascript:this.src='../upload/20160418105851714.JPG'" alt=""></a></li>
+      <li><a target="_blank" href="OnlineCoursenew.aspx?stat=1&amp;c_kind=34&amp;c_kind2=41&amp;c_kind3=351" title="Formation en ligne"><img style="height:90px;" src="../upload/20160407033742282.JPG" onmouseout="javascript:this.src='../upload/20160407033742282.JPG'" onmouseover="javascript:this.src='../upload/20160407033742282.JPG'" alt=""></a></li>
+      <li class="none"><a target="_blank" href="faq_80.html" title="Mentions légales"><img style="height:90px;" src="../upload/20160407033811579.JPG" onmouseout="javascript:this.src='../upload/20160407033811579.JPG'" onmouseover="javascript:this.src='../upload/20160407033811579.JPG'" alt=""></a></li> 
+     </ul> 
+    </div> 
+   </div> 
+   <div class="footer"> 
+    <div class="friendlink "> 
+     <div class="left"> 
+      <dl>
+       <dt class="link2">
+        Actualités
+       </dt>
+       <dd>
+        <a href="Press-Release-details_74_i6848.html" target="_blank">2015 IHS Research Ranking</a>
+       </dd>
+      </dl>
+      <dl class="dl">
+       <dt class="link2">
+        Partenaires
+       </dt>
+       <dd>
+        <a href="partnerlist.aspx?stat=1&amp;c_kind=43&amp;c_kind2=44&amp;c_kind3=46" target="_blank">Partenaires technologiques</a>
+       </dd>
+       <dd>
+        <a href="distributionPartner.aspx?stat=1&amp;c_kind=43&amp;c_kind2=45&amp;c_kind3=53" target="_blank">Partenaires de distribution</a>
+       </dd>
+       <dd>
+        <a href="about_400.html" target="_blank">Plateforme ouverte pour systèmes embarqués</a>
+       </dd>
+      </dl>
+      <dl class="dl1">
+       <dt class="link2">
+        Support
+       </dt>
+       <dd>
+        <a href="faq_81.html" target="_blank">Délai</a>
+       </dd>
+       <dd>
+        <a href="Tools_82.html" target="_blank">Téléchargements</a>
+       </dd>
+       <dd>
+        <a href="WhitePaper_39.html" target="_blank">Livre Blanc</a>
+       </dd>
+       <dd>
+        <a href="about_435.html" target="_blank">Centre de la sécurité</a>
+       </dd>
+      </dl>
+      <dl class="dl">
+       <dt class="link2">
+        Autres
+       </dt>
+       <dd>
+        <a href="OnlineInquiry.aspx?stat=1&amp;c_kind=59&amp;c_kind2=61" target="_blank">Demande en ligne</a>
+       </dd>
+       <dd>
+        <a href="contactHikvision_62.html" target="_blank">Nous contacter</a>
+       </dd>
+       <dd>
+        <a href="hr.aspx?stat=1&amp;c_kind=59&amp;c_kind2=10512" target="_blank">Carrière</a>
+       </dd>
+      </dl> 
+     </div> 
+     <div class="right">
+      <a href="GlobalMarketing.aspx" title=""></a>
+     </div> 
+    </div> 
+    <div class="bottom1"> 
+     <div class="left">
+      © Hangzhou Hikvision Digital Technology Co., Ltd. All Rights Reserved. Powered by 
+      <a href="http://www.mountor.com" target="_blank" title="">Mountor</a>
+     </div> 
+     <div class="right" style="display:none;">
+      <a href="#" title="" class="a"></a>
+      <a href="#" title="" class="a3"></a>
+      <a href="#" title="" class="a1"></a>
+      <a href="http://www.youtube.com/channel/UCAt5uHvm5r71kxgm3SYyoPw" target="_blank" title="" class="a2"></a>
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <script type="text/javascript">    
+    function Change(obj, category) {
+        for(var i=1;i<4;i++){
+            document.getElementById(category + i).className = "";
+        }
+        obj.className = "a";
+        $.ajax({
+            url: 'ashx/index.ashx',
+            type: 'post',
+            data: { "id": obj.id , "category": category },
+            dataType: 'text',
+            async: false,
+            success: function (msg) {
+                if (category == "news") {
+                    $("#news").html(msg);
+                
+                }
+                if (category == "events") {
+                    $("#events").html(msg);
+
+                }
+                if (category == "products") {
+                    $("#products").html(msg);
+
+                }
+
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert(XMLHttpRequest.status);
+                alert(XMLHttpRequest.readyState);
+                alert(textStatus);
+                alert(errorThrown);
+            }   
+
+
+        });
+    }
+
+
+    //function ChangeImage(imgId, obj) {
+    //    for (var i = 1; i < 7; i++) {
+    //        document.getElementById("smallImage"+i).className = "";
+    //    }
+    //    obj.className = "change";
+    //    $.ajax({
+    //        url: 'ashx/IndexImgChange.ashx',
+    //        type: 'post',
+    //        data: { "id": imgId},
+    //        dataType: 'text',
+    //        async: false,
+    //        success: function (msg) {
+    //            if (msg != "")
+    //            {
+    //                $("#bigImg").html(msg);
+    //            }
+
+    //        },
+    //        error: function (XMLHttpRequest, textStatus, errorThrown) {
+    //            alert(XMLHttpRequest.status);
+    //            alert(XMLHttpRequest.readyState);
+    //            alert(textStatus);
+    //            alert(errorThrown);
+    //        }
+
+
+    //    });
+    //}
+</script>   
+ </body>
+</html>
